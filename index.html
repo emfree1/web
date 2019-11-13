@@ -5,41 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="magnific-popup.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <title>Document</title>
 </head>
 <body>
 <header>
-    <div class="main-header">
+    <div class="main-header" data-parallax="scroll" data-image-src="img/Rectangle2.png">
         <div class="nav-menu">
-            <div class="empty-block"></div>
+            <div class="empty-block">
+                <div class="gamburger">
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span id="span1"></span>
+                        <span id="span2"></span>
+                        <span id="span3"></span>
+                    </div>  
+                </div>
+            </div>
             <div class="menu">
                 <ul class="menu-list">
                     <li>
                         <a href="#">Главная</a>
                     </li>
                     <li>
-                        <a href="#">Наши проекты</a>
+                        <a href="#firm">Наши проекты</a>
                     </li>
                     <li>
-                        <a href="#">Услуги</a>
+                        <a href="#work">Услуги</a>
                     </li>
                     <li>
                         <a href="#">Новости</a>
                     </li>
                     <li>
-                        <a href="#">Контакты</a>
+                        <a href="#contacts">Контакты</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="main-header-text">
             <div class="text">
-                <p>Передовая IT студия</p>
-                <h1>Мы создаем легкие решения<br>сложных задач и проблем</h1>
-                <button class="our-projects">
-                    <a href="#">Наши проекты</a>
+                <p class="parallax-p">Передовая IT студия</p>
+                <h1 class="parallax-h">Мы создаем легкие решения<br>сложных задач и проблем</h1>
+                <button class="our-projects one">
+                    <a href="#firm">Наши проекты</a>
                 </button>
             </div>
         </div>
@@ -82,7 +92,7 @@
         </div>
         <div class="button-service">
             <button class="our-projects">
-                <a href="#">Все услуги</a>
+                <a href="#work">Все услуги</a>
             </button>
         </div>
     </div>
@@ -151,7 +161,7 @@
             </div>
         </div>
     </div>
-    <div class="specialized-work">
+    <div class="specialized-work" id="work">
         <div class="blue-block"></div>
         <div class="specialized-work-text">
             <div class="specialized-text-block">
@@ -187,7 +197,7 @@
             <div class="items-line"></div>
         </div>
     </div>
-    <div class="project-firm">
+    <div class="project-firm" id="firm">
         <div class="project-firm-text">
             <h5>Наши проекты</h5>
             <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem<br>Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
@@ -215,29 +225,31 @@
             </div>
             <div class="popap-botton-bg">
                 <botton class="popap-botton">
-                    <a href="https://www.youtube.com/watch?v=tAGnKpE4NCI"  title="Test title"  class="popap-video"><i class="fas fa-play-circle"></i>Смотреть видео</a>
+                    <a href="https://youtu.be/tAGnKpE4NCI"  title="Test title"  class="popap-video"><i class="fas fa-play-circle"></i>Смотреть видео</a>
                 </botton>
             </div>
         </div>
     </div>
+    <form  id="myfrom" role="form">
     <div class="email-newsletter">
         <div class="email-newsletter-text">
             <h6>Подпишитесь на нашу рассылку</h6>
             <p>Полезные статьи, акции, новости - получите все это сейчас!</p>
         </div>
-        <div class="input-box">
-            <input type="email" placeholder=" Ваш e-mail" class="input-selector">
-            <button class="input-button">
-                <p>Подписаться</p>
-            </button>
-        </div>
-        <div class="input-box-text">
-            <p>Мы не шлем спам, и передаем никому ваши данные.</p>
-        </div>
+            <div class="input-box">
+                <input type="email" placeholder=" Ваш e-mail" class="input-selector" name="email">
+                <button class="input-button">
+                    <p>Подписаться</p>
+                </button>
+            </div>
+            <div class="input-box-text">
+                <p>Мы не шлем спам, и передаем никому ваши данные.</p>
+            </div>
     </div>
+    </form>
 </main>
 <footer>
-    <div class="main-footer">
+    <div class="main-footer" id="contacts">
         <div class="main-footer-wrapper">
             <div class="footer-informations">
                 <p>Контактная информация</p>
@@ -284,9 +296,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
     <script src='libs/counter//jquery.counterup.min.js'></script>
-    <script src="/libs/popup/jquery.magnific-popup.min.js"></script>
-    <script src="/path/to/parallax.js"></script>
+    <script src="libs/popup/jquery.magnific-popup.min.js"></script>
     <script src="libs/parallax.js-1.5.0/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
     <script src="main.js"></script>
 
 </body>

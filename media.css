@@ -1,0 +1,460 @@
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.empty-block{
+    width: 46%;
+}
+.menu{
+    width: 54%;
+}
+.menu-list{
+    padding-right: 27px;
+}
+.menu-list li>a{
+    font-size: 13px;
+}
+.text h1{
+    padding: 20px 0px 27px 0px;
+    font-size: 30px;
+}
+.mobile-applications-text h2{
+    font-size: 26px;
+    line-height: 38px;
+}
+.mobile-applications-text p{
+    font-size: 14px;
+}
+.applications-border-radius-one{
+    width: 90px;
+    height: 90px;
+}
+.applications-border-radius-two{
+    width: 70px;
+    height: 70px;
+    font-size: 62px
+}
+.website-development h3{
+    font-size: 16px;
+}
+.website-development p{
+    font-size: 11px;
+    line-height: 20px;
+}
+.website-development{
+    padding: 25px 20px 0px 12px;
+}
+.development-standards-text h4{
+    font-size: 22px;
+    line-height: 33px
+}
+.development-standards-text p{
+    font-size: 12px;
+    line-height: 19px
+}
+.development-standards-wrapper{
+    height: 82%;
+}
+.counter{
+    height: 18%;
+}
+.specialized-text-block{
+    font-size: 20px;
+    line-height: 30px;
+}
+.footer-informations p{
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 0;
+}
+.footer-informations ul>li>a{
+    font-size: 14px;
+
+}
+.footer-main-link p{
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 0;
+}
+.footer-main-link ul>li>a{
+    font-size: 14px;
+}
+.footer-our-project p{
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 0;
+}
+.footer-our-project ul>li>a{
+    font-size: 14px;
+}
+.footer-social-networks p{
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 0;
+}
+.footer-social-networks ul>li>a{
+    font-size: 14px;
+}
+.main-footer-wrapper{
+    align-items: flex-end;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.menu-list li{
+    padding-left: 16px;
+}
+.menu-list li>a{
+    font-size: 11px;
+}
+.text p{
+    font-size: 12px;
+}
+.text h1{
+    font-size: 25px;
+    line-height: 36px;
+}
+.our-projects a{
+    font-size: 15px;
+}
+.applications-border-radius-one{
+    width: 80px;
+    height: 80px;
+}
+.applications-border-radius-two{
+    width: 60px;
+    height: 60px;
+    font-size: 57px
+}
+.website-development h3{
+    font-size: 14px;
+}
+.website-development p{
+    font-size: 10px;
+    line-height: 19px;
+}
+.mobile-applications-text h2{
+    font-size: 24px;
+    line-height: 33px;
+}
+.mobile-applications-text p{
+    font-size: 12px;
+}
+.our-work{
+    height: 666px;
+}
+.mobile-applications-text{
+    height: 43%;
+}
+.our-projects{
+    width: 175px;
+}
+.our-projects a{
+    font-size: 14px;
+}
+.development-standards-text h4{
+    font-size: 18px;
+    line-height: 30px;
+}
+.development-standards-text p{
+    font-size: 9px;
+    line-height: 19px;
+}
+.development-standards-text a{
+    font-size: 11px;
+}
+.development-standards-img img{
+    width: 300px;
+    height: 256px;
+}
+.development-standards{
+    height: 630px;
+}
+.counter-number p{
+    font-size: 25px;
+}
+.specialized-text-block{
+    font-size: 17px;
+    line-height: 26px;
+}
+.wrapper-items img{
+    width: 200px;
+    height: 180px;
+}
+.items span{
+    font-size: 11px;
+    line-height: 17px;
+}
+.items a{
+    font-size: 9px;
+}
+.items p{
+    font-size: 11px;
+    line-height: 18px;
+}
+.specialized-work{
+    min-height: 650px;
+}
+.project-firm-text h5{
+    font-size: 22px;
+}
+.project-firm-text p{
+    font-size: 12px;
+    line-height: 19px;
+}
+.project-firm-img img{
+    width: 150px;
+    height: 170px;
+    padding-right: 16px;
+}
+.popap-text p{
+    font-size: 24px;
+}
+.popap-text span{
+    font-size: 12px;
+}
+.popap-botton{
+    width: 274px;
+    height: 92px;
+}
+.footer-informations{
+    width: 26%;
+}
+.footer-main-link{
+    width: 23%;
+}
+.footer-our-project{
+    width: 23%;
+}
+.footer-copyright{
+    height: 41px;
+}
+.footer-copyright p{
+    font-size: 12px;
+}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.menu{
+    display: none;
+}
+.gamburger{
+    display: block;
+    width: 80%;
+    height: 100%;
+}
+#menuToggle{
+    align-items: flex-start;
+}
+.empty-block{
+    display: flex;
+    justify-content: center;
+}
+
+#menuToggle input:checked ~ #span2{
+    transform: rotate(495deg) translate(1px);
+}
+#menuToggle input:checked ~ #span1{
+    transform: rotate(45deg) translate(7px);
+}
+#menuToggle span{
+    width: 39px;
+    height: 5px;
+}
+.text p{
+    font-size: 12px;
+}
+.text h1{
+    font-size: 18px;
+    line-height: 27px;
+}
+.mobile-applications-text h2{
+    font-size: 18px;
+    line-height: 28px;
+}
+.mobile-applications-text p{
+    font-size: 10px;
+    line-height: 19px;
+}
+.applications-border-radius-one{
+    width: 60px;
+    height: 60px;
+}
+.applications-border-radius-two{
+    width: 45px;
+    height: 45px;
+    font-size: 41px;
+}
+.website-development h3{
+    font-size: 11px;
+    line-height: 15px
+}
+.website-development p{
+    font-size: 8px;
+    line-height: 15px;
+}
+.website-development{
+    width: 75px;
+    padding: 28px 5px 0px 6px;
+}
+.our-projects{
+    width: 142px;
+}
+.development-standards-text h4{
+    font-size: 14px;
+    line-height: 20px;
+}
+.development-standards-text p{
+    font-size: 5px;
+    line-height: 16px;
+}
+.development-standards-text a{
+    font-size: 8px;
+}
+.development-standards-container{
+    width: 47%;
+    height: 63%;
+}
+.development-standards-img img{
+    width: 233px;
+    height: 228px;
+}
+.development-standards-photo{
+    width: 53%;
+}
+.counter-number i{
+    font-size: 18px;
+    padding-right: 4px;
+}
+.counter-number p{
+    font-size: 15px;
+}
+.counter-text p{
+    margin-top: 0px;
+    font-size: 9px
+}
+.specialized-work{
+    min-height: 577px;
+}
+.specialized-work-text{
+    height: 182px;
+}
+.items{
+    width: 31%;
+    padding-left: 0px;
+}
+.wrapper-items img{
+    width: 129px;
+    height: 130px;
+}
+.items span{
+    font-size: 8px;
+    line-height: 5px;
+}
+.items p{
+    font-size: 6px;
+    line-height: 17px;
+}
+.items a{
+    font-size: 7px;
+    line-height: 14px;
+}
+.specialized-text-block{
+    font-size: 14px;
+    line-height: 23px;
+}
+.project-firm-text h5{
+    font-size: 19px;
+}
+.project-firm-text p{
+    font-size: 9px;
+    line-height: 15px;
+    padding-top: 10px;
+}
+.project-firm-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project-firm-img img{
+    width: 150px;
+    height: 170px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+}
+.button-service{
+    height: 23%;
+    align-items: center;
+}
+.project-firm{
+    height: 650px;
+}
+.popap{
+    width: 100%;
+    height: 500px;
+}
+.popap-img{
+    height: 411px;
+}
+.popap-img img{
+    width: 100%;
+    height: 100%;
+}
+.popap-text p{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.popap-text span{
+    font-size: 11px;
+}
+.popap-botton-bg{
+    width: 68%;
+    height: 50%;
+}
+.popap-botton{
+    width: 190px;
+    height: 64px;
+}
+.popap-botton a{
+    font-size: 9px;
+}
+.popap-botton a>i{
+    margin-right: 11px;
+    font-size: 32px;
+}
+.email-newsletter{
+    height: 300px;
+}
+.email-newsletter{
+    font-size: 15px;
+    line-height: 20px;
+}
+.email-newsletter p{
+    font-size: 11px;
+    line-height: 24px;
+}
+.input-selector{
+    width: 187px;
+    padding-left: 10px;
+}
+.input-button{
+    width: 141px;
+}
+.input-box-text p{
+    font-size: 10px;
+    line-height: 21px;
+}
+.email-newsletter h6{
+    font-size: 15px;
+    line-height: 18px;
+}
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+}

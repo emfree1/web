@@ -3,48 +3,53 @@ $('.count').counterUp({
     time: 1000
 });
 $(document).ready(function() {
-    $('.popap-botton').magnificPopup({type:'iframe'});
+  console.log($('.popap-botton'))
+    $('.popap-botton').magnificPopup({type:'iframe', items:[{
+      src: 'https://www.dailymotion.com/embed/video/xxgmlg#.UV71MasY3wE',
+      title: 'Peter & Paul fortress in SPB'
+    },]});
   });
 
-$(document).ready(function() {
-	$('.popap-botton').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
+// $(document).ready(function() {
+// 	$('.popap-botton').magnificPopup({
+// 		disableOn: 700,
+// 		type: 'iframe',
+// 		mainClass: 'mfp-fade',
+// 		removalDelay: 160,
+// 		preloader: false,
+// 		fixedContentPos: false
+// 	});
+// });
 
-		fixedContentPos: false
-	});
-});
-$('.popap-botton').magnificPopup({
-    type: 'iframe',
-    
-    
-    iframe: {
-      patterns: {
-        dailymotion: {
-         
-          index: 'youtube.com',
-          
-          id: function(url) {        
-              var m = url.match(/^.+youtube.com\/(video|hub)\/([^_]+)[^#]*(#video=([^_&]+))?/);
-              if (m !== null) {
-                  if(m[4] !== undefined) {
-                    
-                      return m[4];
-                  }
-                  return m[2];
-              }
-              return null;
-          },
-          
-          src: 'https://www.youtube.com/embed/tAGnKpE4NCI'
-          
-        }
-      }
+$('.main-header').parallax({imageSrc: 'img/Rectangle2.png'});
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function(event){
+    event.preventDefault();
+    const blockId = anchor.getAttribute('href')
+    document.querySelector('' + blockId).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  })
+}
+
+$("#myform").validate({
+  rules: {
+    email: {
+        required: true,
+        email: true
+    },
+    name: {
+      required: true,
+      minlength: 3
     }
-    
-    
-  });
-  $('.main-header').parallax({imageSrc: '/path/to/image.jpg'});
+  },
+  messages: {
+    email: {
+      required: "Обов'язкове поле для заповнення",
+      minlength: "Довжина емейлу повинна бути не менше 3 символів"
+    }
+  }
+});
