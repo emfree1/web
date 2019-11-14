@@ -718,11 +718,11 @@
 .input-selector{
     width: 100px;
     padding-left: 10px;
-    height: 26px;
+    height: 24px;
 }
 .input-button{
     width: 80px;
-    height: 26px
+    height: 26px;
 }
 .email-newsletter p{
     font-size: 8px;
