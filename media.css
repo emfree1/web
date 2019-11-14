@@ -448,12 +448,305 @@
     font-size: 15px;
     line-height: 18px;
 }
+.main-footer{
+    height: auto;
+}
+.main-footer-wrapper{
+    align-items: center;
+    flex-direction: column;
+}
+.footer-informations{
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-informations p {
+    font-size: 15px;
+}
+.footer-main-link{
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-main-link p{
+    font-size: 15px;
+}
+.footer-main-link ul{
+    padding: 0;
+}
+.footer-our-project{
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.footer-our-project p{
+    font-size: 15px;
+}
+.footer-our-project ul{
+    padding-left: 30px;
+}
+.footer-social-networks{
+    align-items: center;
+    width: 50%;
+}
+.footer-social-networks p{
+    font-size: 15px;
+}
+.main-footer{
+    height: auto;
+}
+.main-footer-wrapper{
+    height: auto;
+}
 }
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+.parallax-mirror{
+    height: 650px;
 }
+.main-header{
+    height: 650px;
+}
+.text p{
+    font-size: 12px;
+}
+.text h1{
+    font-size: 15px;
+    line-height: 20px;
+}
+.our-projects a{
+    font-size: 12px;
+}
+.applications-border-radius-one.one{
+    display: none;
+}
+.website-development.one{
+    display: none;
+}
+.mobile-applications-text h2{
+    font-size: 14px;
+    line-height: 23px;
+}
+.mobile-applications-text p{
+    font-size: 6px;
+    line-height: 14px;
+}
+.website-development p{
+    font-size: 7px;
+    line-height: 12px;
+}
+.our-work{
+    height: 554px;
+}
+.mobile-applications-text{
+    height: 35%;
+}
+.mobile-applications{
+    height: 35%;
+}
+.button-service{
+    height: 30%;
+}
+.development-standards{
+    height: 400px;
+}
+.development-standards-wrapper{
+    height: 76%;
+}
+.development-standards-container{
+    width: 47%;
+    height: 68%;
+}
+.development-standards-text{
+    width: 82%;
+}
+.development-standards-text h4{
+    font-size: 9px;
+    line-height: 14px;
+}
+.development-standards-text p{
+    font-size: 4px;
+    line-height: 13px;
+}
+.development-standards-text a{
+    font-size: 7px;
+}
+.development-standards-photo{
+    width: 53%;
+}
+.development-standards-img{
+    width: 100%;
+}
+.development-standards-img img{
+    width: 146px;
+    height: 167px;
+}
+.counter{
+    height: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter-wrapper{
+    width: 80%
+}
+.counter-wrapper-container{
+    width: 20%;
+}
+.counter-number{
+    height: 10%;
+}
+.counter-number i{
+    font-size: 12px;
+    padding-right: 4px;
+}
+.counter-number p{
+    font-size: 11px;
+}
+.counter-text{
+    height: 17%;
+}
+.counter-text p{
+    margin-top: 0px;
+    font-size: 6px;
+}
+.specialized-text-block{
+    font-size: 10px;
+    line-height: 18px;
+}
+.our-projects{
+    width: 108px;
+    height: 30px;
+}
+.our-projects a{
+    font-size: 10px;
+}
+.specialized-work{
+    min-height: 400px;
+}
+.blue-block{
+    height: 50%;
+}
+.specialized-work-text{
+    height: 128px;
+}
+.items{
+    width: 31%;
+}
+.wrapper-items img{
+    width: 79px;
+    height: 92px;
+}
+.items span{
+    font-size: 7px;
+    line-height: 8px;
+}
+.items p{
+    font-size: 4px;
+    line-height: 11px;
+}
+.items a {
+    font-size: 5px;
+    line-height: 9px;
+}
+.items-line{
+    height: 42px;
+}
+.project-firm{
+    height: 561px;
+}
+.project-firm-text p{
+    font-size: 6px;
+    line-height: 11px;
+    padding-top: 0px;
+}
+.project-firm-img img{
+    width: 117px;
+    height: 124px;
+}
+.button-service{
+    height: 19%;
+}
+.project-firm-text h5{
+    font-size: 13px;
+}
+.popap{
+    height: 333px;
+}
+.popap-img{
+    height: 280px;
+}
+.popap-text{
+    height: 52%;
+}
+.popap-botton-bg{
+    width: 63%;
+    height: 37%;
+}
+.popap-text p{
+    font-size: 10px;
+    margin: 0;
+    height: auto;
+    line-height: 14px;
+    
+}
+.popap-text span{
+    font-size: 7px;
+    line-height: 25px;
+}
+.popap-botton a>i{
+    margin-right: 8px;
+    font-size: 24px;
+}
+.popap-botton{
+    width: 139px;
+    height: 41px;
+}
+.email-newsletter{
+    height: 250px;
+}
+.email-newsletter h6{
+    font-size: 10px;
+    line-height: 9px;
+}
+.email-newsletter p{
+    font-size: 7px;
+    line-height: 24px;
+}
+.input-selector{
+    width: 100px;
+    padding-left: 10px;
+    height: 26px;
+}
+.input-button{
+    width: 80px;
+}
+.email-newsletter p{
+    font-size: 8px;
+    line-height: 21px;
+}
+.footer-informations{
+    width: 70%;
+}
+.footer-main-link{
+    width: 70%;
+}
+.footer-our-project{
+    width: 70%;
+}
+.footer-social-networks{
+    width: 70%;
+}
+.footer-copyright{
+    height: 35px;
+}
+.footer-copyright p{
+    font-size: 10px;
+}
+}
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
