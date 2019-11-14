@@ -722,7 +722,7 @@
 }
 .input-button{
     width: 80px;
-    height: 28px;
+    height: 100%;
 }
 .email-newsletter p{
     font-size: 8px;
