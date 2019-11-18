@@ -58,11 +58,6 @@ body{
 #span1 {
     transform-origin: 4px 0px;
 }
-
-#span3 {
-    
-}
-
 #menuToggle input:checked ~ #span1 {
     background-color: #4985FF;
     transform: rotate(45deg) translate(8px);
@@ -153,6 +148,7 @@ body{
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
     border-radius: 30px;
     border: none;
+    transform: translate(0%, 0%)
 }
 .our-work{
     width: 100%;
@@ -798,4 +794,71 @@ body{
     position: absolute;
     top: -25px;
     right: -25px;
+}
+.gradient-btn{
+    transition: .5s;
+    box-shadow: 0 5px 20px rgba(0,0,0, .5);
+    overflow: hidden;
+    
+}
+.gradient-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #1366ff, #ff0b6d);
+    z-index: -1;
+    border-radius: 60px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s ease-in-out;
+}
+.gradient-btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.our-projects.two{
+    border: 1px solid #4985FF;
+    background: white;
+    border-radius: 0;
+}
+.our-projects.two a{
+    color: #4985FF;
+}
+.our-projects-button{
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+.our-projects.two:before{
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 44px;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -1.6em;
+    -webkit-transform: skewX(-45deg) translateX(0);
+            transform: skewX(-45deg) translateX(0);
+    -webkit-transition: none;
+    transition: none;
+}
+.our-projects.two:hover{
+    background-color: #2194E0;
+    color: #fff;
+    border-bottom: 4px solid #1977b5;
+}
+.our-projects.two:hover:before {
+    -webkit-transform: skewX(-45deg) translateX(13.5em);
+            transform: skewX(-45deg) translateX(13.5em);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.our-projects.two:hover .our-projects-button{
+    color: white;
+}
+.menu-mobile{
+    display: none;
 }

@@ -10,16 +10,6 @@ $(document).ready(function() {
     },]});
   });
 
-// $(document).ready(function() {
-// 	$('.popap-botton').magnificPopup({
-// 		disableOn: 700,
-// 		type: 'iframe',
-// 		mainClass: 'mfp-fade',
-// 		removalDelay: 160,
-// 		preloader: false,
-// 		fixedContentPos: false
-// 	});
-// });
 
 $('.main-header').parallax({imageSrc: 'img/Rectangle2.png'});
 
@@ -51,5 +41,26 @@ $("#myform").validate({
       required: "Обов'язкове поле для заповнення",
       minlength: "Довжина емейлу повинна бути не менше 3 символів"
     }
+  }
+});
+
+$('.menu-gamb').on('click',function(){
+  $('.menu-gamb').toggleClass('active');
+});
+
+$('.menu-gamb').on('click', function() {
+if($('.menu-gamb').hasClass('active')) {
+  console.log('111');
+  $('.menu-mobile').css('display', 'flex');
+} else {
+  console.log('222');
+  $('.menu-mobile').css('display', 'none');
+}
+});
+$('.menu-gamb').on('click', function() {
+  if($('.menu-gamb').hasClass('active')) {
+    $('.text').css('display', 'none');
+  } else {
+    $('.text').css('display', 'flex');
   }
 });
